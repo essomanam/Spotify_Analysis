@@ -1,0 +1,8 @@
+Ci apres les identifiants de connection a la base de donnees Mongodb atlas cree
+Nom BD: Spotify
+collection: spotify
+uri = "mongodb+srv://SDCr7AqKRHFk6YEh:XjBIRuxMb3nHurPD@cluster0.deqk5dg.mongodb.net/"
+user :SDCr7AqKRHFk6YEh
+password:XjBIRuxMb3nHurPD
+
+NB : vous ne pouvez vous connecter que si votre adresse ip est ajoute sur mongodb atlas
