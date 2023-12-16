@@ -67,6 +67,28 @@ Les données ont été collectées de sources différentes
 - SOUNDCLOUD Music Data
 - Kaggle
 ### Description des données
+-Donnée obtenue de kaggle
+
+A. Structure des Données
+La base de données comprend 195 entrées, chacune représentant une chanson, et 14 attributs décrivant divers aspects musicaux. Les caractéristiques comprennent des éléments tels que la danseabilité, l'énergie, la tonalité, le volume sonore, la présence de paroles, la probabilité d'acoustique ou d'instrumental, la vivacité, la positivité, la vitesse, la durée, la signature temporelle, et un attribut binaire indiquant si l'utilisateur a aimé la chanson.
+
+B. Types de Données
+Les types de données incluent des valeurs numériques (float64 et int64) pour la plupart des attributs, ainsi qu'un attribut binaire (liked) indiquant la préférence de l'utilisateur.
 
 ### Exploration des données
+-Donnée obtenue de kaggle
+
+A. Valeurs Uniques
+La diversité des valeurs uniques dans chaque attribut reflète la variété des caractéristiques musicales dans la base de données. Par exemple, la danseabilité et l'énergie ont respectivement 169 et 168 valeurs uniques, démontrant la richesse de ces caractéristiques.
+
+B. Statistiques Descriptives
+Les statistiques descriptives fournissent un aperçu des tendances centrales et de la dispersion des données. Par exemple, la danseabilité moyenne est de 0.64, suggérant que la plupart des chansons ont une facilité de danse raisonnable.
+
+
+
+
+
 ### Vérifiction de la qualité des données
+-Donnée obtenue de kaggle
+
+Aucune valeur manquante n'a été identifiée dans la base de données après le processus de remplacement, garantissant l'intégrité des données pour l'analyse ultérieure.
