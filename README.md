@@ -66,6 +66,7 @@ Analyser comment ces tendances varient en fonction des genres musicaux, des rég
 Les données ont été collectées de sources différentes 
 - SOUNDCLOUD Music Data
 - Kaggle
+- Gihub
 ### Description des données
 -Donnée obtenue de kaggle
 
@@ -74,6 +75,15 @@ La base de données comprend 195 entrées, chacune représentant une chanson, et
 
 B. Types de Données
 Les types de données incluent des valeurs numériques (float64 et int64) pour la plupart des attributs, ainsi qu'un attribut binaire (liked) indiquant la préférence de l'utilisateur.
+
+-Donnée obtenue de Github
+
+A. Structure des Données
+L'ensemble de données Spotify (intitulé data.csv) comprend plus de 160 000 pistes de 1921 à 2020 trouvées dans Spotify en juin 2020. 
+Chaque ligne de l'ensemble de données correspond à une piste, avec des variables telles que le titre, l'artiste et l'année situées dans leurs colonnes respectives. Outre les variables fondamentales, des éléments musicaux de chaque morceau, tels que le tempo, la dansabilité et la tonalité, ont également été extraits.
+
+B. Types de Données
+L'ensemble de données est divisé en 169909 lignes et 19 colonnes. Ces 19 colonnes de données sont divisées en 15 colonnes numériques et 4 colonnes catégorielles.
 
 ### Exploration des données
 -Donnée obtenue de kaggle
@@ -84,7 +94,8 @@ La diversité des valeurs uniques dans chaque attribut reflète la variété des
 B. Statistiques Descriptives
 Les statistiques descriptives fournissent un aperçu des tendances centrales et de la dispersion des données. Par exemple, la danseabilité moyenne est de 0.64, suggérant que la plupart des chansons ont une facilité de danse raisonnable.
 
-
+- Données de Github
+Forte popularité au fil des années.
 
 
 
