@@ -1,0 +1,3 @@
+data/*.json
+constantes.py
+venv/*.*
