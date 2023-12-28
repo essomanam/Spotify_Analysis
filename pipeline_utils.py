@@ -1,5 +1,5 @@
 import requests
-from constantes import *
+from constantes_example import *
 import json
 from pymongo import MongoClient
 import urllib.parse

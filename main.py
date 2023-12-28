@@ -11,6 +11,7 @@ def main():
     transform()
 
     # Step 4: Load the transformed data into MongoDB
+
     load()
 
 if __name__ == "__main__":

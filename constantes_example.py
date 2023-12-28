@@ -1,5 +1,5 @@
 PLAYLIST_LIST = [
-    {"name":"Top 50 : Monde","id":"37i9dQZEVXbMDoHDwVN2tF"},
+    #{"name":"Top 50 : Monde","id":"37i9dQZEVXbMDoHDwVN2tF"},
     {"name":"African Heat","id":"37i9dQZF1DWYkaDif7Ztbp"},
     {"name":"Viral 50 : Monde","id":"37i9dQZEVXbLiRSasKsNU9"},
     {"name":"RapCaviar","id":"37i9dQZF1DX0XUsuxWHRQd"},
@@ -10,10 +10,10 @@ PLAYLIST_LIST = [
     {"name":"Hot Country","id":"37i9dQZF1DX1lVhptIYRda"},
     ]
 API_URL = "https://api.spotify.com"
-API_CLIENT_ID = "YOUR_SPOTIFY_APP_CLIENT_ID"
-API_CLIENT_SECRET = "YOUR_SPOTIFY_APP_CLIENT_SECRET"
+API_CLIENT_ID = "0712177e05fb45afb97e5b09b67ca832"
+API_CLIENT_SECRET = "001ec7ea64b241cd83e1d805c3def5c5"
 
-MONGO_URI =  "YOUR_MONGO_CLUSTER_NAME"
-DB_NAME = "spotify"#YOU SHOULD HAVE CREATED THIS DATABASE ON YOUR CLUSTER
-COLLECTION_NAME = "tracks"#YOU SHOULD HAVE CREATED THIS COLLECTION TOO
+MONGO_URI =  "mongodb+srv://SDCr7AqKRHFk6YEh:XjBIRuxMb3nHurPD@cluster0.deqk5dg.mongodb.net/"
+DB_NAME = "Spotify"#YOU SHOULD HAVE CREATED THIS DATABASE ON YOUR CLUSTER
+COLLECTION_NAME = "spotify"#YOU SHOULD HAVE CREATED THIS COLLECTION TOO
 
