@@ -7,7 +7,7 @@ db = client["Spotify"]
 collection = db["spotify"]
 
 # Récupération des documents
-documents = collection.find({}, {"audio_features"})
+documents = collection.find({}, {"audio_features", "audio_analysis"})
 
 # Conversion des documents en une liste de dictionnaires
 documents_list = list(documents)
@@ -17,4 +17,5 @@ documents_list = list(documents)
 df = pd.json_normalize(documents_list)
 
 # Affichage des premières lignes du DataFrame
+print(df.columns)
 print(df.head())
