@@ -2,12 +2,12 @@ import pymongo
 import pandas as pd
 
 # Connexion à MongoDB
-client = pymongo.MongoClient("mongodb+srv://SDCr7AqKRHFk6YEh:XjBIRuxMb3nHurPD@cluster0.deqk5dg.mongodb.net/")
+client = pymongo.MongoClient("mongodb://localhost:27017")
 db = client["Spotify"]
 collection = db["spotify"]
 
 # Récupération des documents
-documents = collection.find({}, {"audio_features", "audio_analysis"})
+documents = collection.find({}, {"popularity", "album", "artists", "audio_features", "audio_analysis"})
 
 # Conversion des documents en une liste de dictionnaires
 documents_list = list(documents)
@@ -19,3 +19,6 @@ df = pd.json_normalize(documents_list)
 # Affichage des premières lignes du DataFrame
 print(df.columns)
 print(df.head())
+
+## data processing
+df.to_csv('df.csv')
