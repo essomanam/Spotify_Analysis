@@ -1,10 +1,15 @@
 import requests
-import os
 from constantes_example import *
 import json
 from pymongo import MongoClient
 import urllib.parse
 import time
+
+import os
+
+# Chemin vers le dossier
+
+
 
 MAX_RETRIES = 3
 RETRY_DELAY_SECONDS = 2
@@ -98,14 +103,28 @@ def extract():
                 print(f"Les informations de la playlist {name} ont été sauvegardées dans '{name}_{playlist_id}.json'")
 
 def transform():
+    chemin_dossier = 'data'
+
+    # Liste pour stocker les noms des fichiers
+    PLAYLIST_LIST = []
+
+    # Parcourir le dossier
+    for nom_fichier in os.listdir(chemin_dossier):
+        chemin_complet = os.path.join(chemin_dossier, nom_fichier)
+
+        # Vérifier si c'est un fichier et non un dossier
+        if os.path.isfile(chemin_complet):
+            # Ajouter le nom du fichier à la liste
+            PLAYLIST_LIST.append(nom_fichier)
+    print(PLAYLIST_LIST)
     global transformed_data
     for playlist in PLAYLIST_LIST:
-        name, playlist_id = playlist['name'], playlist['id']
-        with open(f'data/{name}_{playlist_id}.json', 'r', encoding='utf-8') as json_file:
+        #name, playlist_id = playlist['name'], playlist['id']
+        with open(f'data/'+playlist, 'r', encoding='utf-8') as json_file:
             for line in json_file:
                 track_data = json.loads(line)
                 transformed_data.append({
-                    'playlist_name': name,
+                    'playlist_name': playlist,
                     'track_name': track_data.get('name', ''),
                     'track_id': track_data.get('id', ''),
                     'album': {

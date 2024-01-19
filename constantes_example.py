@@ -1,8 +1,7 @@
 
 PLAYLIST_LIST = [
-    {"name":"Top 50 : Monde","id":"37i9dQZEVXbMDoHDwVN2tF"},
     {"name":"African Heat","id":"37i9dQZF1DWYkaDif7Ztbp"},
-    {"name":"Viral 50 : Monde","id":"37i9dQZEVXbLiRSasKsNU9"},
+    #{"name":"Viral 50 : Monde","id":"37i9dQZEVXbLiRSasKsNU9"},
     {"name":"RapCaviar","id":"37i9dQZF1DX0XUsuxWHRQd"},
     {"name":"Today's Top Hits","id":"37i9dQZF1DXcBWIGoYBM5M"},
     {"name":"RNB X","id":"37i9dQZF1DX4SBhb3fqCJd"},
