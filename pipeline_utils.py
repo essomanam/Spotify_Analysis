@@ -1,4 +1,5 @@
 import requests
+import os
 from constantes_example import *
 import json
 from pymongo import MongoClient
@@ -98,7 +99,6 @@ def extract():
 
 def transform():
     global transformed_data
-
     for playlist in PLAYLIST_LIST:
         name, playlist_id = playlist['name'], playlist['id']
         with open(f'data/{name}_{playlist_id}.json', 'r', encoding='utf-8') as json_file:
