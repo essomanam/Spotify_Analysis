@@ -9,7 +9,7 @@ def main():
 
 
     # Afficher la liste des noms de fichiers
-    
+
     # Step 3: Transform the extracted data
     transform()
 
